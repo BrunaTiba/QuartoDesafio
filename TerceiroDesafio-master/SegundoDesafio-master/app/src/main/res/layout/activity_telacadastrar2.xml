@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a495a"
+    tools:context=".telacadastrar2">
+
+    <FrameLayout
+        android:layout_width="376dp"
+        android:layout_height="404dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="69dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="113dp">
+
+
+            <EditText
+                android:id="@+id/nomeCadastarEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nome" />
+
+
+            <EditText
+                android:id="@+id/senhaCadastrarEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="Senha" />
+
+
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar" />
+
+            <Button
+                android:id="@+id/btLimpar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limpar" />
+
+            <Button
+                android:id="@+id/btnRecuperar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recuperar" />
+
+            <Button
+                android:id="@+id/btVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btVoltar"
+                android:text="Fazer Login" />
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="39dp"
+        android:layout_height="43dp"
+
+        app:srcCompat="@drawable/apple"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="37dp" />
+</android.support.constraint.ConstraintLayout>
